@@ -1,0 +1,24 @@
+<ion-content class="background">
+  <div class="content">
+    <div padding>
+      <div text-center>
+        <img src="./assets/imgs/logo.png" class="logo">
+      </div>
+
+      <div class="form">
+        <input type="text" [(ngModel)]="nome" placeholder="Nome" text-center>
+
+        <input type="text" [(ngModel)]="user.email" placeholder="Email" text-center>
+
+        <input type="password" [(ngModel)]="user.password" placeholder="Senha" text-center>
+
+        <input type="password" [(ngModel)]="confirm_pass" placeholder="Confirmar Senha" text-center>
+      </div>
+
+      <div text-center>
+        <div (click)="register(user)" class="btnCadastrar" text-center>Cadastrar</div>
+        <div (click)="Login()" class="linkLogin" text-center>Entrar</div>
+      </div>
+    </div>
+  </div>
+</ion-content>

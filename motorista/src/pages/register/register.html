@@ -1,0 +1,71 @@
+<ion-content class="background" >
+  <!-- Dados da moto -->
+  <div class="centerContent" *ngIf="registerMoto">
+    <img src="./assets/imgs/logo.png" class="logo">
+
+    <div class="buttonBack">
+      <p>Moto</p>
+    </div>
+      <input type="text" [(ngModel)]="cor" placeholder="Cor da moto" class="input">
+      <input type="text" [(ngModel)]="placa" placeholder="Numero da Placa" class="input">
+    <div class="buttonNext" (click)="detalhesMoto()">
+      Proximo
+    </div>
+    <div class="buttonBack" (click)="abrirLogin()">
+      Voltar para login
+    </div>
+  </div>
+
+  <!-- Foto da CNH -->
+  <div class="centerContent" *ngIf="registerCnh">
+    <img src="./assets/imgs/camera.svg" class="image">
+    <div class="text-1">
+      Tire uma foto da sua CNH
+    </div>
+    <div class="text-2">
+      Para nós ajudar e agilizamos o processo de verificação,
+      retire a do plastico abra e tire a foto em um local bem iluminado
+    </div>
+    <div class="buttonNext" (click)="buscarImagem()" *ngIf="buscarImg">
+        Buscar foto
+      </div>
+      <div class="buttonNext" (click)="abrirInfoUser()" *ngIf="continuar">
+          Continuar
+        </div>
+      <div class="buttonBack" (click)="abrirLogin()">
+        Voltar Login
+      </div>
+  </div>
+
+  <!-- dados pessoais -->
+  <div class="centerContent" *ngIf="registerUser">
+    <img src="./assets/imgs/logo.png" class="logo">
+    <div class="buttonBack">
+      Dados pessoais
+    </div>
+    <input type="text" [(ngModel)]="nome" placeholder="Nome" class="input">
+    <input type="text" [(ngModel)]="user.email" placeholder="E-mail" class="input">
+    <input type="password" [(ngModel)]="user.password" placeholder="Senha" class="input">
+    <input type="password" [(ngModel)]="confirm_pass" placeholder="Confirmação de senha" class="input">
+    
+    <div (click)="register(user)" class="buttonNext">
+      Confirmar
+    </div>
+    <div (click)="abrirLogin()" class="buttonBack">
+      Voltar para login
+    </div>
+  </div>
+
+  <!-- tela final -->
+  <div class="centerContent" *ngIf="final">
+    <img src="./assets/imgs/feito.svg" class="image">
+
+    <p class="text-1">Tudo pronto</p>
+
+    <p class="text-2">Agora que você fez a sua parte, os nossos administradores irão verificar sua situação e te mandaram um email autorizando o seu acesso. Aguarde...</p>
+    
+    <div class="buttonNext" (click)="abrirLogin()">
+      Ok
+    </div>
+  </div>
+</ion-content>

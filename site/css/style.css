@@ -1,0 +1,334 @@
+/* fonts */
+
+@font-face {
+    src: url(../fonts/kollektif-bold.ttf);
+    font-family: 'KollektifBold';
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(../fonts/Gidole-Regular.otf);
+    font-family: 'Gidole';
+    font-weight: normal;
+}
+
+/* /fonts */
+
+/* default */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h4 {
+    color: #032539;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Gidole';
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'KollektifBold';
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.padding-container {
+    padding: 130px 0px;
+    transition: all .8s ease;
+}
+
+/* /default */
+
+/* navbar */
+
+.navbar-custom {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(244, 145, 19, 1) 29%, rgba(251, 170, 34, 1) 87%);
+    padding: 10px 10px;
+    transition: 0.4s;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-link>a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gidole';
+}
+
+.fa-bars {
+    color: white;
+    font-size: 35px;
+}
+
+.logo {
+    width: 100px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+/* /navbar */
+
+/* home */
+
+.bottom-h2 {
+    font-size: 20px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/rio.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.h1-home {
+    font-size: 7.9rem;
+    margin-bottom: 33px;
+}
+
+.h2-home {
+    font-size: 3.6rem;
+    margin-bottom: 97px;
+}
+
+.h1-home {
+    font-family: 'KollektifBold';
+}
+
+.h2-home {
+    font-family: 'Gidole';
+}
+
+.img-home {
+    width: 550px;
+    background-attachment: fixed;
+}
+
+.alignhome-title {
+    padding-top: 30vh;
+}
+
+.alignhome-img {
+    padding-top: 30vh;
+}
+
+.img-store {
+    width: 225px;
+}
+
+.app-store {
+    margin-right: 25px;
+}
+
+/* /home */
+
+/* como usar */
+
+.color-usar {
+    background-color: #F8F3F2;
+}
+
+.row-white {
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+
+.border-1 {
+    border-right: solid 1px #ededed;
+    border-bottom: solid 1px #ededed;
+}
+
+.border-2 {
+    border-bottom: solid 1px #ededed;
+}
+
+.border-3 {
+    border-right: 1px solid #ededed;
+}
+
+.space-row {
+    margin-top: 25px;
+}
+
+.card-txt {
+    font-size: 18px;
+    display: block;
+}
+
+.text-padding {
+    padding: 30px;
+    overflow: hidden;
+    transition: all .8s ease;
+}
+
+/* /como usar */
+
+/* como funciona */
+
+.img-download {
+    width: 330px;
+}
+
+.img-login {
+    width: 351px;
+}
+
+.img-pedir {
+    width: 283px;
+}
+
+.img-esperar {
+    width: 330px;
+}
+
+.img-pagar {
+    width: 331px;
+}
+
+.img-confirmar {
+    width: 316px;
+}
+
+.comofunciona-txt {
+    font-size: 20px;
+}
+
+.h4-comofunciona {
+    font-size: 30px;
+}
+
+/* /como funciona */
+
+/* vire motorista */
+
+.color-motorista{
+    background-color: #F8F3F2;
+}
+
+.img-atencao {
+    width: 330px;
+}
+
+.img-pergunta {
+    width: 318px;
+}
+
+.img-documento {
+    width: 254px;
+}
+
+.img-camera {
+    width: 330px;
+}
+
+.img-examinar {
+    width: 283px;
+}
+
+.img-parabens {
+    width: 246px;
+}
+
+.motorista-txt {
+    font-size: 20px;
+}
+
+.h4-motorista {
+    font-size: 30px;
+}
+
+/* /vire motorista */
+
+/* footer */
+
+.background-footer1 {
+    background-color: #032539;
+}
+
+.background-footer2 {
+    background-color: #041f2e;
+    border-top: rgba(244, 145, 19, 1) 1px solid;
+}
+
+.align-text-footer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.icon-padding {
+    padding: 25px;
+}
+
+.icon-footer {
+    font-size: 35px;
+}
+
+a .fab {
+    color: white;
+}
+
+.text-copy {
+    color: rgb(177, 174, 174);
+}
+
+.text-copy strong {
+    color: white;
+}
+
+.fb-circle{
+    color: #3b5998;
+}
+
+.tw-circle{
+    color: #00aced;
+}
+
+.ins-circle{
+    color: #e1306c; 
+}
+
+.li-circle{
+    color: #007bb6;
+}
+
+.git-circle{
+    color: rgb(86, 91, 95);
+}
+
+/* /footer */

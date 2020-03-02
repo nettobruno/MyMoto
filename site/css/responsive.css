@@ -1,0 +1,166 @@
+@media (max-width: 480px) {
+    .h1-home {
+        font-size: 4.2rem;
+    }
+
+    .h2-home {
+        font-size: 1.9rem;
+    }
+
+    .navbar-custom {
+        padding: 6px 10px;
+    }
+    .card-txt{
+        font-size: 16px;
+        display: block;
+    }
+    .img-store{
+        width: 140px;
+    }
+
+    .app-store{
+        margin-right: 0px;
+    }
+
+    .alignhome-img {
+        display: none;
+    }
+
+    .padding-container{
+    padding: 100px 0px;
+    transition: all .8s ease;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .h1-home {
+        font-size: 5.8rem;
+
+    }
+
+    .h2-home {
+        font-size: 2.3rem;
+    }
+
+    .navbar-custom {
+        padding: 7px 10px;
+    }
+
+    .alignhome-img {
+        display: none;
+    }
+
+    .img-store{
+        width: 160px;
+    }
+
+    .padding-container{
+    padding: 100px 0px;
+    transition: all .8s ease;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .h1-home {
+        font-size: 4.9rem;  
+    }
+
+    .h2-home {
+        font-size: 2.3rem;
+        margin-bottom: 50px;
+    }
+
+    .navbar-custom {
+        padding: 8px 10px;
+    }
+
+    .text-padding{
+        padding: 15px;
+    }
+
+    .img-store{
+        width: 150px;
+    }
+
+    .img-home {
+        width: 390px;
+    }
+    
+    .alignhome-img {
+        padding-top: 26vh;
+    }
+
+    .card-txt{
+        font-size: 16px;
+        display: block;
+    }
+    
+    .padding-container{
+    padding: 100px 0px;
+    transition: all .8s ease;
+    }
+
+    .color-usar{
+    background-color: #F8F3F2;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1599px) {
+    .h1-home {
+        font-size: 6.8rem;
+        margin-bottom: 30px;
+    }
+
+    .h2-home {
+        font-size: 2.7rem;
+        margin-bottom: 70px;
+    }
+
+    .navbar-custom {
+        padding: 9px 10px;
+    }
+
+    .img-store{
+        width: 200px;
+    }
+
+    .alignhome-img {
+        padding-top: 29vh;
+    }
+
+    .app-store{
+        margin-right: 23px;
+    }
+
+    .img-home {
+        margin-left: 20px;
+        width: 450px;
+    }
+
+    .card-txt{
+        font-size: 16px;
+        display: block;
+    }
+}
+
+@media (min-width: 1600px) {
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .motorista-txt {
+        font-size: 16px;
+    }
+    
+    .h4-motorista {
+        font-size: 27px;
+    }
+
+    .comofunciona-txt {
+        font-size: 16px;
+    }
+    
+    .h4-comofunciona {
+        font-size: 27px;
+    }
+}

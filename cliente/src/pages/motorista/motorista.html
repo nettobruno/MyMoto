@@ -1,0 +1,42 @@
+<ion-content>
+  <div id="fundo">
+    <div class="containerHeader">
+      <div>
+        <ion-icon name="arrow-round-back" class="botao-voltar" (click)="voltar()"></ion-icon>
+      </div>
+      <div id="imagem"></div>
+      <div id="textos">
+        <p id="nome"></p>
+        <div>
+          <div class="displayFlex">
+            <p id="avaliacao"></p>
+            <ion-icon ios="ios-star" md="md-star"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box boxInfo" text-center>
+      <div class="textInfo">
+        <h2>Informaçoes da moto</h2>
+        <div class="displayFlex">
+          <p class="boldFont">Cor:</p>
+          <p id="cor"></p>
+        </div>
+        <div class="displayFlex">
+          <p class="boldFont">Placa:</p>
+          <p id="placa"></p>
+        </div>
+      </div>
+    </div>
+    <div class="box boxCorrida">
+      <div class="textCorrida">
+        <h2>Corridas realizadas</h2>
+        <div>
+          <p id="numeroCorridas"></p>
+        </div>
+      </div>
+    </div>
+    <div class="containerBody">
+    </div>
+  </div>
+  </ion-content>

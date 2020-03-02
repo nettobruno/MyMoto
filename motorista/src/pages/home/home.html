@@ -1,0 +1,59 @@
+<ion-menu [content]="content" class="ContentMenu">
+    <ion-header class="HeaderMenu" *ngIf="userDate">
+      <ion-toolbar>
+        <div>
+          <img [src]="userDate.perfil">
+        </div>
+        <div>
+          <p>{{userDate.nome}}</p>
+        </div>
+        <div class="buttonMenu" (click)="abrirPerfil()">
+          <ion-icon name="contact"></ion-icon>
+          Ver perfil
+        </div>
+      </ion-toolbar>
+    </ion-header>
+      <ion-content>
+        <button ion-item (click)= "logout()" menuClose class="buttonListMenu">
+          Sair
+        </button>
+      </ion-content>
+    </ion-menu>
+    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+    <ion-header>
+      <ion-navbar>
+        <button ion-button menuToggle [disabled]="userDate == undefined">
+          <ion-icon name='menu'></ion-icon>
+        </button>
+        <ion-title>Pedidos</ion-title>
+      </ion-navbar>
+    </ion-header>
+
+<ion-content class="content">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="pedidos.length > 0 && reload == false" class="list">
+      <ion-list *ngFor="let p of pedidos">
+        <ion-item (click)="abrirMapa(p.getId())" class="list-pedido">
+          <div class="list-nome">Nome: {{p.getUsuario()}}</div>
+          <div class="list-preco">Preço: {{p.getPreco()}}</div>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div class="centerText" *ngIf="reload">
+      <p>Carregando...</p>
+    </div>
+
+    <div class="centerText" *ngIf="pedidos.length == 0 && reload == false">
+      <div>
+        Deslize para buscar mais
+      </div>
+      <div>
+        <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+      </div>
+    </div>
+</ion-content>
