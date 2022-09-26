@@ -45,7 +45,7 @@
     "zone.js": "0.8.29"
   },
   "devDependencies": {
-    "@capacitor/cli": "1.1.0",
+    "@capacitor/cli": "1.5.3",
     "@ionic/app-scripts": "3.2.4",
     "@ionic/lab": "1.0.24",
     "cordova-plugin-device": "^2.0.2",
